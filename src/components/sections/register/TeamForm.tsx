@@ -16,7 +16,7 @@ const TeamForm: React.FC = () => {
             <h2 className="text-white text-2xl font-bold mb-6">Register as TEAM</h2>
             <form className="space-y-2">
                 {/* Team Names */}
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-5 gap-2">
                     <input
                         type="text"
                         placeholder="Team lead: Full name*"
@@ -48,7 +48,7 @@ const TeamForm: React.FC = () => {
                 </div>
 
                 {/* Phone Numbers */}
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-5 gap-2">
                     <input
                         type="tel"
                         placeholder="Phone*"
@@ -80,7 +80,7 @@ const TeamForm: React.FC = () => {
                 </div>
 
                 {/* Emails */}
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-5 gap-2">
                     <input
                         type="email"
                         placeholder="Email*"
@@ -112,7 +112,7 @@ const TeamForm: React.FC = () => {
                 </div>
 
                 {/* Birth Years */}
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-5 gap-2">
                     <input
                         type="text"
                         placeholder="Year of birth*"
@@ -144,7 +144,7 @@ const TeamForm: React.FC = () => {
                 </div>
 
                 {/* Universities */}
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-5 gap-2">
                     {[0, 1, 2, 3, 4].map((index) => (
                         <select key={index} className="p-1 rounded bg-white border-8 border-white text-black">
                             {universities.map((uni, uniIndex) => (
@@ -157,7 +157,7 @@ const TeamForm: React.FC = () => {
                 </div>
 
                 {/* University Others */}
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-5 gap-2">
                     <input type="text" placeholder="University (Other):" className="p-1 rounded bg-white border-8 border-white text-black" />
                     <input type="text" placeholder="University (Other):" className="p-1 rounded bg-white border-8 border-white text-black" />
                     <input type="text" placeholder="University (Other):" className="p-1 rounded bg-white border-8 border-white text-black" />
@@ -166,7 +166,7 @@ const TeamForm: React.FC = () => {
                 </div>
 
                 {/* Company & Position */}
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-5 gap-2">
                     <input type="text" placeholder="Current company & position*" className="p-1 rounded bg-white border-8 border-white text-black" required />
                     <input type="text" placeholder="Current company & position*" className="p-1 rounded bg-white border-8 border-white text-black" required />
                     <input type="text" placeholder="Current company & position*" className="p-1 rounded bg-white border-8 border-white text-black" required />
@@ -175,7 +175,7 @@ const TeamForm: React.FC = () => {
                 </div>
 
                 {/* Seniority Levels */}
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-5 gap-2">
                     {[0, 1, 2, 3, 4].map((index) => (
                         <select key={index} className="p-1 rounded bg-white border-8 border-white text-black">
                             {seniorityLevels.map((level, levelIndex) => (
@@ -188,7 +188,7 @@ const TeamForm: React.FC = () => {
                 </div>
 
                 {/* Resume Uploads */}
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-5 gap-2">
                     {[0, 1, 2, 3, 4].map((index) => (
                         <div key={index}>
                             <label className="block text-white text-sm mb-1">Resume upload</label>
@@ -198,7 +198,7 @@ const TeamForm: React.FC = () => {
                 </div>
 
                 {/* LinkedIn Profiles */}
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-5 gap-2">
                     <input type="url" placeholder="LinkedIn profile" className="p-1 rounded bg-white border-8 border-white text-black" />
                     <input type="url" placeholder="LinkedIn profile 1" className="p-1 rounded bg-white border-8 border-white text-black" />
                     <input type="url" placeholder="LinkedIn profile 2" className="p-1 rounded bg-white border-8 border-white text-black" />
@@ -207,7 +207,7 @@ const TeamForm: React.FC = () => {
                 </div>
 
                 {/* GitHub Repos */}
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-5 gap-2">
                     <input type="url" placeholder="Github repo" className="p-1 rounded bg-white border-8 border-white text-black" />
                     <input type="url" placeholder="Github repo 1" className="p-1 rounded bg-white border-8 border-white text-black" />
                     <input type="url" placeholder="Github repo 2" className="p-1 rounded bg-white border-8 border-white text-black" />
@@ -216,7 +216,7 @@ const TeamForm: React.FC = () => {
                 </div>
 
                 {/* Location */}
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-3 gap-2">
                     <select className="p-1 rounded bg-white border-8 border-white text-black">
                         {cities.map((city, index) => (
                             <option key={index} value={city}>{city}</option>

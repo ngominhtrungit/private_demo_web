@@ -36,7 +36,7 @@ const SectionRegister: React.FC = () => {
                     </div>
 
                     {/* Side Illustration - Only show when Individual tab is active */}
-                    {activeTab === 'individual' && <RegisterIllustration />}
+                    {/*{activeTab === 'individual' && <RegisterIllustration />}*/}
                 </div>
             </div>
         </div>
