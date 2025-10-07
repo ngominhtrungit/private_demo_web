@@ -6,6 +6,20 @@ import Image from "next/image";
 import Button from "../ui/Button";
 
 export default function Header() {
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            const headerHeight = 70; // Adjust this value based on your header height
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     return (
         <header
             className="fixed top-0 left-0 w-full z-50 flex items-center justify-center px-8 py-2 bg-gradient-to-r from-blue-600 to-green-600"
@@ -32,25 +46,21 @@ export default function Header() {
                 />
             </div>
             <nav className="flex items-center gap-8">
-                <Link href="/overview">
+                <button onClick={() => scrollToSection('overview')}>
                     <span className="text-white font-medium">Overview</span>
-                </Link>
-                <Link href="/timeline">
-                    <span className="text-white font-medium">Timeline</span>
-                </Link>
-                <Link href="/mentors">
-                    <span className="text-white font-medium">Mentors</span>
-                </Link>
-                <Link href="/register">
-                    <Button
-                        hasZoomAnimation={true}
-                        variant="primary"
-                        size="md"
-                        className="bg-white px-5 py-2 text-[#31B675]"
-                    >
-                        Register
-                    </Button>
-                </Link>
+                </button>
+                <button onClick={() => scrollToSection('highlights')}>
+                    <span className="text-white font-medium">Highlights</span>
+                </button>
+                <Button
+                    hasZoomAnimation={true}
+                    variant="primary"
+                    size="md"
+                    className="bg-white px-5 py-2 text-[#31B675]"
+                    onClick={() => scrollToSection('register')}
+                >
+                    Register
+                </Button>
             </nav>
         </header>
     );

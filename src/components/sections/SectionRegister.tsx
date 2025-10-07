@@ -11,7 +11,7 @@ const SectionRegister: React.FC = () => {
     const [activeTab, setActiveTab] = useState<'individual' | 'team'>('individual');
 
     return (
-        <div className="py-16 px-4" style={{
+        <div className="py-8 px-4" style={{
             background: 'linear-gradient(150deg, #45e083 0%, #2586c3 40%, #329854 70%, #329854 100%)'
         }}>
             <div className="max-w-6xl mx-auto">

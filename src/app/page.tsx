@@ -26,9 +26,15 @@ export default function HomePage() {
             {/*<h1>Homepage</h1>*/}
             {/*<button onClick={handleClick}>Go to Detail Page</button>*/}
 
-            <SectionTitle />
-            <SectionCarousel />
-            <SectionRegister />
+            <div id="overview">
+                <SectionTitle />
+            </div>
+            <div id="highlights">
+                <SectionCarousel />
+            </div>
+            <div id="register">
+                <SectionRegister />
+            </div>
         </main>
     );
 }

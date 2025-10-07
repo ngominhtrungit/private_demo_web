@@ -9,14 +9,14 @@ const SectionTitle: React.FC = () => {
     targetDate.setDate(targetDate.getDate() + 3);
 
     return (
-        <div className="relative text-center py-16">
-            <div className="absolute top-0 left-40 w-full h-full bg-left bg-no-repeat opacity-30"
+        <div className="relative text-center pb-6">
+            <div className="absolute -top-16 left-40 w-full h-full bg-left bg-no-repeat"
                  style={{
                      backgroundImage: 'url(/hackathon-cloud.png)',
                      backgroundSize: '50%'
                  }}>
             </div>
-            <div className="relative z-10 top-14">
+            <div className="relative z-10 pt-24">
                 {/*<div className="flex justify-center items-center gap-8 mb-8 bg-blue-500">*/}
                 <div className="flex justify-center items-center gap-8 mb-4 mr-20">
                     <Image
