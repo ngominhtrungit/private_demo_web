@@ -44,24 +44,24 @@ export default function Countdown({ targetDate }: CountdownProps) {
     }, [targetDate]);
 
     return (
-        <div className="flex flex-col items-center mt-24">
-            <h3 className="text-white text-1xl font-bold mb-2">COUNTDOWN</h3>
-            <div className="flex items-center gap-4 mb-8">
-                <div className="bg-teal-400 text-white text-center p-1 rounded-lg min-w-[80px]">
-                    <div className="text-3xl font-bold">{timeLeft.days.toString().padStart(2, '0')}</div>
-                    <div className="text-sm">Day(s)</div>
+        <div className="flex flex-col items-center">
+            <h3 className="text-white text-lg md:text-xl font-bold mb-2 md:mb-4">COUNTDOWN</h3>
+            <div className="flex items-center gap-2 md:gap-4">
+                <div className="bg-teal-400 text-white text-center p-2 md:p-3 rounded-lg min-w-[60px] md:min-w-[80px]">
+                    <div className="text-xl md:text-3xl font-bold">{timeLeft.days.toString().padStart(2, '0')}</div>
+                    <div className="text-xs md:text-sm">Day(s)</div>
                 </div>
-                <div className="bg-teal-400 text-white text-center p-1 rounded-lg min-w-[80px]">
-                    <div className="text-3xl font-bold">{timeLeft.hours.toString().padStart(2, '0')}</div>
-                    <div className="text-sm">Hour(s)</div>
+                <div className="bg-teal-400 text-white text-center p-2 md:p-3 rounded-lg min-w-[60px] md:min-w-[80px]">
+                    <div className="text-xl md:text-3xl font-bold">{timeLeft.hours.toString().padStart(2, '0')}</div>
+                    <div className="text-xs md:text-sm">Hour(s)</div>
                 </div>
-                <div className="bg-teal-400 text-white text-center p-1 rounded-lg min-w-[80px]">
-                    <div className="text-3xl font-bold">{timeLeft.minutes.toString().padStart(2, '0')}</div>
-                    <div className="text-sm">Minute(s)</div>
+                <div className="bg-teal-400 text-white text-center p-2 md:p-3 rounded-lg min-w-[60px] md:min-w-[80px]">
+                    <div className="text-xl md:text-3xl font-bold">{timeLeft.minutes.toString().padStart(2, '0')}</div>
+                    <div className="text-xs md:text-sm">Minute(s)</div>
                 </div>
-                <div className="bg-teal-400 text-white text-center p-1 rounded-lg min-w-[80px]">
-                    <div className="text-3xl font-bold">{timeLeft.seconds.toString().padStart(2, '0')}</div>
-                    <div className="text-sm">Second(s)</div>
+                <div className="bg-teal-400 text-white text-center p-2 md:p-3 rounded-lg min-w-[60px] md:min-w-[80px]">
+                    <div className="text-xl md:text-3xl font-bold">{timeLeft.seconds.toString().padStart(2, '0')}</div>
+                    <div className="text-xs md:text-sm">Second(s)</div>
                 </div>
             </div>
         </div>

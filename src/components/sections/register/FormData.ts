@@ -1,4 +1,3 @@
-// Form data constants for registration forms
 export const universities = [
     'Select University',
     'University of Technology',
