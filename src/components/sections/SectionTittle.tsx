@@ -59,7 +59,7 @@ const SectionTitle: React.FC = () => {
                 </div>
 
                 {/* Countdown and Button */}
-                <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 lg:gap-10">
+                <div className="flex flex-col md:flex-row items-end justify-center gap-4 md:gap-6 lg:gap-10">
                     <Countdown targetDate={targetDate}/>
                     <Button
                         hasZoomAnimation={true}
